@@ -8,8 +8,11 @@ class TwoDPractice
      */
     public  int rowSum (int[][] data, int row) 
     {
-
-        return 0;
+        int sum = 0;
+        for(int i = 0; i < data[row].length; i++){
+          sum = sum + data[row][i];
+        }
+        return sum;
     }
 
     /**
@@ -17,7 +20,10 @@ class TwoDPractice
      */
     public int columnSum(int[][] data, int col)
     {
-
-        return 0;
+        int sum2 = 0;
+        for(int i = 0; i < data[col].length; i++){
+          sum2 = sum2 + data[i][col];
+        }
+        return sum2;
     }
 }      
