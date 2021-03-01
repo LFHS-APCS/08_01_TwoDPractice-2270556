@@ -21,7 +21,7 @@ class TwoDPractice
     public int columnSum(int[][] data, int col)
     {
         int sum2 = 0;
-        for(int i = 0; i < data[col].length; i++){
+        for(int i = 0; i < data.length-1; i++){
           sum2 = sum2 + data[i][col];
         }
         return sum2;
